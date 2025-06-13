@@ -4,4 +4,5 @@ return {
   7489424824, -- testowe konto2
   2599202616, -- borytoko
   2645334884, -- polol
+  3923431908, --polol2
 }
