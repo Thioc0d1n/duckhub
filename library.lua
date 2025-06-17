@@ -1,3 +1,24 @@
+--[[
+    BirdUi - Lightweight Modular UI Library for Lua
+    Version: 1.0.0
+    Author: BirdUi Team
+    
+    Compatible with:
+    - Roblox (Primary target)
+    - LÖVE2D (with minor adaptations)
+    - Other Lua GUI frameworks
+    
+    Usage:
+    local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/yourrepo/Bird-ui/main/Bird-ui.lua"))()
+    
+    Features:
+    - Theme system with predefined themes
+    - Smooth animations (fade, slide, scale)
+    - Modular components (button, slider, checkbox, dropdown, modal)
+    - Responsive design
+    - Intuitive API
+--]]
+
 local BirdUi = {}
 BirdUi.__index = BirdUi
 BirdUi.Version = "1.0.0"
@@ -49,7 +70,7 @@ local Themes = {
         Fonts = {
             Default = Enum.Font.Gotham,
             Bold = Enum.Font.GothamBold,
-            Light = Enum.Font.GothamLight
+            Light = Enum.Font.Gotham
         },
         Sizes = {
             CornerRadius = UDim.new(0, 8),
@@ -77,7 +98,7 @@ local Themes = {
         Fonts = {
             Default = Enum.Font.Gotham,
             Bold = Enum.Font.GothamBold,
-            Light = Enum.Font.GothamLight
+            Light = Enum.Font.Gotham
         },
         Sizes = {
             CornerRadius = UDim.new(0, 8),
@@ -104,7 +125,7 @@ local Themes = {
         },
         Fonts = {
             Default = Enum.Font.Code,
-            Bold = Enum.Font.Code,
+            Bold = Enum.Font.CodeSemibold,
             Light = Enum.Font.Code
         },
         Sizes = {
@@ -593,3 +614,57 @@ function BirdUi:Destroy()
     end
     self.Components = {}
 end
+
+-- ================================
+-- USAGE EXAMPLES
+-- ================================
+
+--[[
+EXAMPLE USAGE:
+
+-- Initialize BirdUi
+local UI = BirdUi:new()
+
+-- Set theme
+UI:SetTheme("Dark")
+
+-- Create components
+local button = UI:Button({
+    Text = "Click Me!",
+    Position = UDim2.new(0, 50, 0, 50),
+    Size = UDim2.new(0, 150, 0, 50),
+    Callback = function()
+        print("Button clicked!")
+    end
+})
+
+local slider = UI:Slider({
+    Position = UDim2.new(0, 50, 0, 120),
+    Size = UDim2.new(0, 200, 0, 20),
+    Min = 0,
+    Max = 100,
+    Value = 50,
+    Callback = function(value)
+        print("Slider value:", value)
+    end
+})
+
+local checkbox = UI:Checkbox({
+    Position = UDim2.new(0, 50, 0, 160),
+    Checked = false,
+    Callback = function(checked)
+        print("Checkbox:", checked)
+    end
+})
+
+-- Create modal
+local modal = UI:Modal({
+    Size = UDim2.new(0, 300, 0, 200)
+})
+
+-- Switch themes dynamically
+UI:SetTheme("Neon")
+--]]
+
+-- Return the main class
+return BirdUi
