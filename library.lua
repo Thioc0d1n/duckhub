@@ -1,23 +1,4 @@
---[[
-    BirdUi - Lightweight Modular UI Library for Lua
-    Version: 1.0.0
-    Author: BirdUi Team
-    
-    Compatible with:
-    - Roblox (Primary target)
-    - LÖVE2D (with minor adaptations)
-    - Other Lua GUI frameworks
-    
-    Usage:
-    local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/yourrepo/Bird-ui/main/Bird-ui.lua"))()
-    
-    Features:
-    - Theme system with predefined themes
-    - Smooth animations (fade, slide, scale)
-    - Modular components (button, slider, checkbox, dropdown, modal)
-    - Responsive design
-    - Intuitive API
---]]
+
 
 local BirdUi = {}
 BirdUi.__index = BirdUi
