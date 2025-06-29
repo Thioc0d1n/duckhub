@@ -4,4 +4,5 @@ return {
   2645334884, -- polol
   3923431908, --polol2
   7352719091, -- flocky
+  2568715750, -- testowe konto
 }
