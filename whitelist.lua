@@ -1,4 +1,4 @@
-return {
+local whitelist = {
   5709024479, -- Lunar / Thio
   2568715750, -- testowe konto
   2599202616, -- borytoko
