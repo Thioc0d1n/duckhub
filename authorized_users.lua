@@ -3,7 +3,6 @@ return {
   2645334884, -- polol
   2568715750, -- borytoko
   3923431908, -- polol2
-  8336762777, -- testowanie
   7352719091, -- flocky
   2568715750, -- borytoko
 }
