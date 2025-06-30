@@ -4,6 +4,6 @@ return {
   2568715750, -- borytoko
   3923431908, -- polol2
   7352719091, -- flocky
-  2568715750, -- borytoko
+  3117002521, -- borytoko
   12195143, -- Lunar
 }
