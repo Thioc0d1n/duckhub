@@ -82,21 +82,6 @@ function Utilities:CreateGradient(colorSequence, rotation)
 	})
 end
 
-
-function Utilities:CreateBlur(parent, size)
-	local blur = self:CreateInstance("Frame", {
-		Name = "BlurFrame",
-		Parent = parent,
-		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-		BackgroundTransparency = 0.5,
-		BorderSizePixel = 0,
-		Size = size or UDim2.new(1, 0, 1, 0),
-		ZIndex = 100
-	})
-	self:CreateCorner(8).Parent = blur
-	return blur
-end
-
 function Utilities:CreateRipple(parent, position)
 	if typeof(position) ~= "Vector2" then return end
 
@@ -296,10 +281,6 @@ function Window:Create(title, config)
 		ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	})
 
-
-	self.BlurFrame = Utilities:CreateBlur(self.GUI, UDim2.new(1, 0, 1, 0))
-	self.BlurFrame.Visible = false
-
 	self.Main = Utilities:CreateInstance("Frame", {
 		Name = "MainWindow",
 		Parent = self.GUI,
@@ -419,9 +400,6 @@ function Window:SetupInteractions()
 			self.Dragging = true
 			dragStart = input.Position
 			startPos = self.Main.Position
-
-			self.BlurFrame.Visible = true
-			Utilities:Tween(self.BlurFrame, {BackgroundTransparency = 0.3})
 		end
 	end)
 
@@ -435,9 +413,6 @@ function Window:SetupInteractions()
 	UserInputService.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			self.Dragging = false
-			Utilities:Tween(self.BlurFrame, {BackgroundTransparency = 1}).Completed:Connect(function()
-				self.BlurFrame.Visible = false
-			end)
 		end
 	end)
 
