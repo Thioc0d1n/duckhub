@@ -8,4 +8,5 @@ return {
   4874515510, -- testcwel
   2405621620, -- yntnyc
   8335253855, -- bailout
+  8338030285, -- lunar
 }
