@@ -6,4 +6,5 @@ return {
   8920084061, -- lunar
   8351422663, -- solar
   4874515510, -- testcwel
+  2405621620, -- yntnyc
 }
