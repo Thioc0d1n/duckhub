@@ -6,4 +6,5 @@ return {
   7352719091, -- flocky
   3117002521, -- borytoko
   12195143, -- Lunar
+  8762886541, -- Tnt_kay
 }
