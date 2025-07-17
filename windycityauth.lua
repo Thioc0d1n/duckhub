@@ -12,4 +12,5 @@ return {
   8338030285, -- lunar
   8762886541, -- Tnt_kay
   4952115911, -- topsmaccbd
+  3514986793, -- yxngmoni
 }
