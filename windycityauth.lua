@@ -10,4 +10,5 @@ return {
   8336744312, -- bailout
   7890995024, -- ofcimturnt999
   8338030285, -- lunar
+  8762886541, -- Tnt_kay
 }
