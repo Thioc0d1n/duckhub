@@ -11,4 +11,5 @@ return {
   7890995024, -- ofcimturnt999
   8338030285, -- lunar
   8762886541, -- Tnt_kay
+  4952115911, -- topsmaccbd
 }
