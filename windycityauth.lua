@@ -15,4 +15,5 @@ return {
   3514986793, -- yxngmoni
   5505182093, -- dc.0633
   4922008826, -- zarskl
+  5792651937, -- richoffbuttons
 }
