@@ -16,7 +16,7 @@ return {
   5505182093, -- dc.0633
   4922008826, -- zarskl
   5792651937, -- richoffbuttons
-  8229407608, -- trimfrss
+  7827713109, -- trimfrss
   1381938851, -- jdot
   8439295606, -- fsg_drilla
   3639944821, -- quon5
