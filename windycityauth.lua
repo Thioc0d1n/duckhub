@@ -24,4 +24,5 @@ return {
   1714880043, -- heartlesss47
   9015873800, -- lunar
   4592085000, -- headpoppa
+  7405197649, -- ghost_7927
 }
