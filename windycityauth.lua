@@ -18,7 +18,6 @@ return {
   5792651937, -- richoffbuttons
   7827713109, -- trimfrss
   1381938851, -- jdot
-  8439295606, -- fsg_drilla
   3639944821, -- quon5
   8712383053, -- 066r
   1714880043, -- heartlesss47
