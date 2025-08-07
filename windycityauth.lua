@@ -10,7 +10,7 @@ return {
   1166210926, -- bailout
   7890995024, -- ofcimturnt999
   8338030285, -- lunar
-  8303537437, -- Tnt_kay
+  8305447116, -- Tnt_kay
   4952115911, -- topsmaccbd
   3514986793, -- yxngmoni
   5505182093, -- dc.0633
